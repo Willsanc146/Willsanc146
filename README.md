@@ -6,7 +6,7 @@
   <p align="center">Especializado en Python (FastAPI) & Vue.js (PrimeVue) | Creación de soluciones empresariales robustas y escalables.</p>
 
   <p align="center">
-    <a href="mailto:william93sb@gmail.com"><img src="https://img.shields.io/badge/Email-william93sb%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+    <a href="mailto:willsanc146@gmail.com"><img src="https://img.shields.io/badge/Email-william93sb%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
     <a href="https://linkedin.com/in/wiliamsanchez146"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
     <img src="https://img.shields.io/badge/Location-Colombia-009739?style=for-the-badge&logo=google-maps&logoColor=white" alt="Ubicación"/>
   </p>
