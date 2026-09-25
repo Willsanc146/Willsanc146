@@ -1,7 +1,9 @@
 <div align="center">
-  <h1 align="center">Hola, soy William Sanchez 👋</h1>
-  <p align="center"><strong>Full Stack Software Engineer | Python (FastAPI) & Vue.js (PrimeVue)</strong></p>
-  <p align="center">Especializado en diseño y desarrollo de arquitecturas empresariales seguras, escalables y orientadas a optimización operativa.</p>
+  <img src="./assets/banner.svg" alt="Banner Wiliam Sanchez" width="100%"/>
+  
+  <h1 align="center">Hola, soy Wiliam Sanchez 👋</h1>
+  <p align="center"><strong>Tecnólogo en Desarrollo de Software | Full Stack Developer</strong></p>
+  <p align="center">Especializado en Python (FastAPI) & Vue.js (PrimeVue) | Creación de soluciones empresariales robustas y escalables.</p>
 
   <p align="center">
     <a href="mailto:william93sb@gmail.com"><img src="https://img.shields.io/badge/Email-william93sb%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
@@ -14,11 +16,13 @@
 
 ### 🚀 Acerca de mí
 
-Ingeniero de Software Full Stack con sólida experiencia liderando y desarrollando módulos críticos en sistemas de gestión empresarial (**ERP**, **HRMS**, **Logística** y **Control Operativo**). Enfocado en escribir código mantenible, arquitecturas desacopladas con **FastAPI** y **SQLAlchemy**, interfaces interactivas de alto rendimiento con **Vue 3**, **Vite** y **PrimeVue**, y aplicación rigurosa de seguridad y criptografía en datos sensibles.
+Tecnólogo en Desarrollo de Software y Full Stack Developer con experiencia en el diseño, desarrollo y mantenimiento de módulos para sistemas de gestión empresarial (**ERP**, **Gestión de Personal**, **Nómina**, **Operaciones** y **Logística**). 
 
-- 🔭 **Enfoque actual**: Desarrollo de plataformas corporativas con arquitecturas RESTful y micro-componentes reactivos.
-- 🔐 **Seguridad & Datos**: Experiencia en encriptación de datos sensibles, firmas digitales y control de acceso basado en roles (RBAC).
-- 🧩 **Clean UI & UX**: Creación de sistemas de diseño corporativos con PrimeVue 4 y Tailwind CSS.
+Enfocado en buenas prácticas, arquitecturas desacopladas con **FastAPI** y **SQLAlchemy**, e interfaces reactivas y optimizadas con **Vue 3**, **Vite** y **PrimeVue**.
+
+- 🔭 **Enfoque técnico**: Desarrollo backend y frontend modular, escalable y mantenible.
+- ⚙️ **Lógica de negocio**: Modelado relacional, automatización de flujos operativos y APIs RESTful de alto rendimiento.
+- 🧩 **UI/UX Corporativo**: Componentes reutilizables construidos con PrimeVue 4 y Tailwind CSS.
 
 ---
 
