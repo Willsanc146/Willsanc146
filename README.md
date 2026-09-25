@@ -43,7 +43,7 @@ Enfocado en buenas prácticas, arquitecturas desacopladas con **FastAPI** y **SQ
 
 ### 💼 Experiencia Destacada & Casos de Éxito
 
-#### 🏢 Sistema Integral de Gestión Empresarial (SIGE)
+#### 🏢 Sistema Empresarial
 *Plataforma corporativa integral de operaciones, nómina, logística y gestión de talento humano.*
 
 - **Módulo de Nómina & Vacaciones**:
