@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/banner.svg" alt="Banner Wiliam Sanchez" width="100%"/>
+  <img src="./wiliam_sanchez.svg" alt="Banner Wiliam Sanchez" width="100%"/>
   
   <h1 align="center">Hola, soy Wiliam Sanchez 👋</h1>
   <p align="center"><strong>Tecnólogo en Desarrollo de Software | Full Stack Developer</strong></p>
