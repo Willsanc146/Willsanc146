@@ -60,15 +60,6 @@ Ingeniero de Software Full Stack con sólida experiencia liderando y desarrollan
 
 ---
 
-### 📊 Estadísticas de GitHub
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=willsanc&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=willsanc&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
-</div>
-
----
-
 <div align="center">
   <sub>Construido con pasión por el software de alto impacto 🚀</sub>
 </div>
