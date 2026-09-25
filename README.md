@@ -30,12 +30,12 @@ Enfocado en buenas prácticas, arquitecturas desacopladas con **FastAPI** y **SQ
 
 <div align="center">
 
-| Categoría | Tecnologías y Herramientas |
+| Área | Tecnologías y Herramientas |
 | :--- | :--- |
-| **Backend** | ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=flat-square&logo=sqlalchemy&logoColor=white) ![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white) |
-| **Frontend** | ![Vue.js](https://img.shields.io/badge/Vue.js_3-4FC08D?style=flat-square&logo=vue.js&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white) ![PrimeVue](https://img.shields.io/badge/PrimeVue_4-41B883?style=flat-square&logo=primevue&logoColor=white) ![Pinia](https://img.shields.io/badge/Pinia-FFE56C?style=flat-square&logo=pinia&logoColor=black) ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white) |
+| **Backend** | ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=flat-square&logo=sqlalchemy&logoColor=white) ![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white) ![REST APIs](https://img.shields.io/badge/REST_APIs-005571?style=flat-square) |
+| **Frontend** | ![Vue.js](https://img.shields.io/badge/Vue.js_3-4FC08D?style=flat-square&logo=vue.js&logoColor=white) ![PrimeVue](https://img.shields.io/badge/PrimeVue_4-41B883?style=flat-square&logo=primevue&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white) ![Pinia](https://img.shields.io/badge/Pinia-FFE56C?style=flat-square&logo=pinia&logoColor=black) ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white) |
 | **Bases de Datos** | ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=flat-square&logo=mariadb&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white) |
-| **Arquitectura & DevOps** | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![REST APIs](https://img.shields.io/badge/REST_APIs-005571?style=flat-square) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black) |
+| **Arquitectura & DevOps** | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black) ![Clean Architecture](https://img.shields.io/badge/Clean-Architecture-0B0F17?style=flat-square) |
 
 </div>
 
@@ -43,24 +43,27 @@ Enfocado en buenas prácticas, arquitecturas desacopladas con **FastAPI** y **SQ
 
 ### 💼 Experiencia Destacada & Casos de Éxito
 
-#### 🏢 Sistema Empresarial
-*Plataforma corporativa integral de operaciones, nómina, logística y gestión de talento humano.*
+#### 🏢 Sistema Integral de Gestión Empresarial
+*Plataforma corporativa para la automatización de nómina, control operativo, logística y talento humano.*
 
-- **Módulo de Nómina & Vacaciones**:
-  - Diseñé el motor de balance de vacaciones (días devengados, acumulados y pendientes), gestión de vacaciones colectivas y sincronización de libros de vacaciones.
-  - Implementé el calendario de festivos especiales con restricciones lógicas por base de datos y validaciones normativas.
+- **Módulo de Nómina & Vacaciones (Cálculo Automatizado)**:
+  - Diseñé el motor de balance de vacaciones (cálculo de días devengados, acumulados y pendientes), automatizando la sincronización con el libro de vacaciones.
+  - Implementé el calendario dinámico de festivos especiales y reglas de negocio respaldadas por restricciones lógicas a nivel de base de datos.
 
-- **Supervisión Operativa & Asistencia Masiva**:
-  - Desarrollé el flujo de registro masivo de asistencia, novedades de desplazamiento directo y bloqueos automatizados por áreas y jerarquías (coordinadores/directores).
-  - Integré auditoría y restricciones para evitar alteraciones en registros con soportes y novedades procesadas.
+- **Supervisión Operativa & Procesamiento Masivo**:
+  - Desarrollé el flujo de registro y procesamiento masivo de asistencia para personal operativo.
+  - Diseñé el sistema de novedades de desplazamiento directo con bloqueos automatizados por jerarquías operativas (coordinadores/directores) y validación de soportes para evitar inconsistencias.
 
-- **Gestión de Talento Humano & Seguridad RBAC**:
-  - Construí el módulo de administración, inactivación masiva y aprovisionamiento granular de usuarios por perfil y centro de costos.
-  - Desarrollé el sistema de consentimiento legal (Términos & Condiciones) y módulo de **firma digital/electrónica**.
-  - Implementé mecanismos criptográficos para la protección de datos sensibles (documentos, líneas corporativas y firmas) en almacenamiento local y persistencia.
+- **Estructura Organizacional & Logística de Recursos**:
+  - Construí el módulo de aprovisionamiento y administración masiva de colaboradores clasificados por centros de costo, sedes y cargos.
+  - Desarrollé la gestión de recepción y control de visitantes, además de la lógica de asignación y despacho de vehículos según capacidades de cupo.
 
-- **Design System y Componentes UI Transversales**:
-  - Arquitecté componentes reutilizables como la tabla dinámica multipropósito (`componentTablaGeneral`) y diálogos de alerta desacoplados (`componentDialogWrapper`), acelerando los tiempos de entrega del frontend en más de un 40%.
+- **Arquitectura de APIs & Rendimiento de Datos**:
+  - Estructuré servicios RESTful con FastAPI y validaciones estrictas mediante esquemas Pydantic, garantizando contratos de datos sólidos hacia el frontend.
+  - Optimicé transacciones y consultas relacionales complejas en MariaDB/MySQL mediante SQLAlchemy ORM, manteniendo integridad referencial y tiempos de respuesta eficientes en operaciones de alta concurrencia.
+
+- **Design System & Componentes UI Transversales**:
+  - Arquitecté una biblioteca interna de componentes UI corporativos y desacoplados sobre PrimeVue (tablas dinámicas multipropósito, modales de diálogo centralizados y flujos de navegación reactivos), acelerando los tiempos de entrega del frontend en más de un 40%.
 
 ---
 
