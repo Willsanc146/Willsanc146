@@ -2,117 +2,223 @@
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml">
       <style>
-        .container {
+        * {
           box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+
+        .container {
           width: 100%;
           height: 240px;
-          background: radial-gradient(circle at 85% 20%, rgba(79, 192, 141, 0.12), transparent 40%),
-                      radial-gradient(circle at 15% 80%, rgba(0, 150, 136, 0.15), transparent 45%),
-                      #0B0F17;
-          border: 1px solid rgba(255, 255, 255, 0.08);
-          border-radius: 12px;
-          padding: 32px 48px;
+          background-color: #080C14;
+          border: 1px solid rgba(79, 192, 141, 0.2);
+          border-radius: 14px;
+          padding: 30px 48px;
           display: flex;
           flex-direction: column;
           justify-content: center;
-          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
           position: relative;
           overflow: hidden;
+          box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.1);
         }
 
+        /* 1. Malla en movimiento continuo */
         .grid-bg {
           position: absolute;
-          inset: 0;
-          background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-                            linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-          background-size: 24px 24px;
-          mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
+          inset: -48px;
+          background-image: 
+            linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+          background-size: 28px 28px;
+          mask-image: radial-gradient(ellipse at center, black 35%, transparent 75%);
+          -webkit-mask-image: radial-gradient(ellipse at center, black 35%, transparent 75%);
+          animation: moveGrid 18s linear infinite;
         }
 
+        @keyframes moveGrid {
+          0% { transform: translate(0, 0); }
+          100% { transform: translate(28px, 28px); }
+        }
+
+        /* 2. Auras de neón que flotan y respiran */
+        .glow-orb-1 {
+          position: absolute;
+          top: -40px;
+          right: 40px;
+          width: 280px;
+          height: 180px;
+          background: radial-gradient(circle, rgba(79, 192, 141, 0.22) 0%, transparent 70%);
+          filter: blur(28px);
+          animation: floatOrb 8s ease-in-out infinite alternate;
+          pointer-events: none;
+        }
+
+        .glow-orb-2 {
+          position: absolute;
+          bottom: -50px;
+          left: 40px;
+          width: 320px;
+          height: 200px;
+          background: radial-gradient(circle, rgba(0, 150, 136, 0.25) 0%, transparent 70%);
+          filter: blur(32px);
+          animation: floatOrb 10s ease-in-out infinite alternate-reverse;
+          pointer-events: none;
+        }
+
+        @keyframes floatOrb {
+          0% { transform: translate(0, 0) scale(0.9); opacity: 0.6; }
+          100% { transform: translate(-25px, 20px) scale(1.15); opacity: 0.95; }
+        }
+
+        /* 3. Reflejo de luz que cruza la tarjeta */
+        .scanline {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: -200px;
+          width: 100px;
+          background: linear-gradient(90deg, transparent, rgba(79, 192, 141, 0.12), rgba(56, 189, 248, 0.2), transparent);
+          transform: skewX(-22deg);
+          animation: scanSweep 7s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+          pointer-events: none;
+        }
+
+        @keyframes scanSweep {
+          0%, 25% { left: -200px; opacity: 0; }
+          30% { opacity: 1; }
+          65% { left: 1200px; opacity: 0; }
+          100% { left: 1200px; opacity: 0; }
+        }
+
+        /* Badge terminal */
         .badge-terminal {
           display: inline-flex;
           align-items: center;
           gap: 8px;
           background: rgba(0, 150, 136, 0.12);
-          border: 1px solid rgba(0, 150, 136, 0.35);
+          border: 1px solid rgba(0, 150, 136, 0.4);
           color: #4FC08D;
-          padding: 4px 12px;
+          padding: 5px 12px;
           border-radius: 20px;
           font-size: 11px;
           font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-          letter-spacing: 0.5px;
+          letter-spacing: 0.8px;
           width: fit-content;
           margin-bottom: 12px;
-          z-index: 1;
+          z-index: 2;
+          box-shadow: 0 0 12px rgba(0, 150, 136, 0.15);
         }
 
         .pulse-dot {
-          width: 6px;
-          height: 6px;
+          width: 7px;
+          height: 7px;
           background-color: #4FC08D;
           border-radius: 50%;
-          animation: pulse 2s infinite;
+          box-shadow: 0 0 8px #4FC08D;
+          animation: pulse 1.8s infinite;
         }
 
+        @keyframes pulse {
+          0% { transform: scale(0.9); opacity: 0.5; box-shadow: 0 0 4px #4FC08D; }
+          50% { transform: scale(1.3); opacity: 1; box-shadow: 0 0 12px #4FC08D; }
+          100% { transform: scale(0.9); opacity: 0.5; box-shadow: 0 0 4px #4FC08D; }
+        }
+
+        .cursor {
+          display: inline-block;
+          font-weight: 800;
+          color: #4FC08D;
+          animation: blink 0.9s step-start infinite;
+        }
+
+        @keyframes blink {
+          50% { opacity: 0; }
+        }
+
+        /* 4. Título con degradado animado */
         .title {
           font-size: 32px;
           font-weight: 800;
           color: #F8FAFC;
-          letter-spacing: -0.5px;
-          margin: 0 0 6px 0;
-          z-index: 1;
+          letter-spacing: -0.6px;
+          margin-bottom: 6px;
+          z-index: 2;
         }
 
         .title-gradient {
-          background: linear-gradient(90deg, #009688 0%, #4FC08D 100%);
+          background: linear-gradient(90deg, #009688, #4FC08D, #38BDF8, #4FC08D, #009688);
+          background-size: 300% 100%;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
+          animation: textGradient 6s ease infinite;
+        }
+
+        @keyframes textGradient {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
         }
 
         .subtitle {
-          font-size: 15px;
+          font-size: 14.5px;
           font-weight: 500;
           color: #94A3B8;
-          margin: 0 0 16px 0;
-          z-index: 1;
+          margin-bottom: 18px;
+          z-index: 2;
+          letter-spacing: -0.2px;
         }
 
+        /* Tags */
         .tags-row {
           display: flex;
           gap: 10px;
-          z-index: 1;
+          z-index: 2;
           flex-wrap: wrap;
         }
 
         .tag {
           font-size: 11px;
           font-weight: 600;
-          color: #CBD5E1;
+          color: #E2E8F0;
           background: rgba(255, 255, 255, 0.04);
-          border: 1px solid rgba(255, 255, 255, 0.08);
-          padding: 3px 10px;
+          border: 1px solid rgba(255, 255, 255, 0.09);
+          padding: 4px 11px;
           border-radius: 6px;
           font-family: ui-monospace, monospace;
+          transition: border-color 0.3s ease;
+          animation: tagBreathe 4s ease-in-out infinite alternate;
         }
 
-        @keyframes pulse {
-          0% { transform: scale(0.95); opacity: 0.6; }
-          50% { transform: scale(1.3); opacity: 1; }
-          100% { transform: scale(0.95); opacity: 0.6; }
+        .tag:nth-child(2) { animation-delay: 0.8s; }
+        .tag:nth-child(3) { animation-delay: 1.6s; }
+        .tag:nth-child(4) { animation-delay: 2.4s; }
+        .tag:nth-child(5) { animation-delay: 3.2s; }
+
+        @keyframes tagBreathe {
+          0% { border-color: rgba(255, 255, 255, 0.08); background: rgba(255, 255, 255, 0.03); }
+          100% { border-color: rgba(79, 192, 141, 0.35); background: rgba(79, 192, 141, 0.06); }
         }
       </style>
 
       <div class="container">
+        <!-- Fondos y Efectos Dinámicos -->
         <div class="grid-bg"></div>
-        
+        <div class="glow-orb-1"></div>
+        <div class="glow-orb-2"></div>
+        <div class="scanline"></div>
+
+        <!-- Contenido -->
         <div class="badge-terminal">
           <span class="pulse-dot"></span>
           <span>SYSTEM ONLINE // READY TO DEPLOY</span>
+          <span class="cursor">_</span>
         </div>
 
         <h1 class="title">Wiliam Sanchez <span class="title-gradient">/ Full Stack</span></h1>
         <p class="subtitle">Tecnólogo en Desarrollo de Software · Arquitectura Empresarial &amp; Soluciones Escalables</p>
-        
+
         <div class="tags-row">
           <span class="tag">FastAPI</span>
           <span class="tag">Vue 3 / PrimeVue</span>
