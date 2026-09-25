@@ -43,7 +43,7 @@ Enfocado en buenas prácticas, arquitecturas desacopladas con **FastAPI** y **SQ
 
 ### 💼 Experiencia Destacada & Casos de Éxito
 
-#### 🏢 Sistema Integral de Gestión Empresarial
+#### 🏢 Sistema de Gestión Empresarial
 *Plataforma corporativa para la automatización de nómina, control operativo, logística y talento humano.*
 
 - **Módulo de Nómina & Vacaciones (Cálculo Automatizado)**:
