@@ -38,13 +38,14 @@ Enfocado en buenas prácticas, arquitecturas desacopladas con **FastAPI** y **SQ
 | **Arquitectura & DevOps** | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black) ![Clean Architecture](https://img.shields.io/badge/Clean-Architecture-0B0F17?style=flat-square) |
 
 </div>
+
 <div data-importer="stats" align="center">
-  <img src="https://raw.githubusercontent.com/willsanc146/willsanc146/stats-output/stats.svg?hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=highcontrast&locale=es&hide_border=false&order=1&custom_title=Contribuciones" height="150" alt="stats graph"  />
-  <img src="https://raw.githubusercontent.com/willsanc146/willsanc146/languages-output/languages.svg?locale=es&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=highcontrast&hide_border=true&order=2" height="150" alt="languages graph"  />
-  <img src="https://streak-stats.demolab.com?user=willsanc146&locale=es&mode=daily&theme=highcontrast&hide_border=true&border_radius=5&order=3&user=willsanc146" height="150" alt="streak graph"  />
+  <img src="https://raw.githubusercontent.com/Willsanc146/Willsanc146/stats-output/stats.svg?hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=highcontrast&locale=es&hide_border=false&order=1&custom_title=Contribuciones" height="150" alt="stats graph"  />
+  <img src="https://raw.githubusercontent.com/Willsanc146/Willsanc146/languages-output/languages.svg?locale=es&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=highcontrast&hide_border=true&order=2" height="150" alt="languages graph"  />
+  <img src="https://streak-stats.demolab.com?user=Willsanc146&locale=es&mode=daily&theme=highcontrast&hide_border=true&border_radius=5&order=3&user=Willsanc146" height="150" alt="streak graph"  />
 </div>
 
-<img data-importer="snake" src="https://raw.githubusercontent.com/willsanc146/willsanc146/snake-output/snake.svg" alt="Snake animation" />
+<img data-importer="snake" src="https://raw.githubusercontent.com/Willsanc146/Willsanc146/snake-output/snake.svg" alt="Snake animation" />
 
 ---
 
