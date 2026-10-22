@@ -40,7 +40,6 @@ Enfocado en buenas prácticas, arquitecturas desacopladas con **FastAPI** y **SQ
 </div>
 
 <div data-importer="stats" align="center">
-  <img src="https://raw.githubusercontent.com/Willsanc146/Willsanc146/stats-output/stats.svg?hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=highcontrast&locale=es&hide_border=false&order=1&custom_title=Contribuciones" height="150" alt="stats graph"  />
   <img src="https://raw.githubusercontent.com/Willsanc146/Willsanc146/languages-output/languages.svg?locale=es&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=highcontrast&hide_border=true&order=2" height="150" alt="languages graph"  />
   <img src="https://streak-stats.demolab.com?user=Willsanc146&locale=es&mode=daily&theme=highcontrast&hide_border=true&border_radius=5&order=3&user=Willsanc146" height="150" alt="streak graph"  />
 </div>
